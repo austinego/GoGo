@@ -1,0 +1,254 @@
+<hmtl>
+  <head>
+    <title>Go</title>
+
+<style>
+  /* Add any CSS styles you want here */
+  *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  }
+  body{
+      font-family: Courier New;
+  }
+  nav{
+      background: rgba(68, 104, 31, 0.956);
+    
+  }
+  label.logo{
+      color: white;
+      font-size: 35px;
+      line-height: 50px;
+      padding-left: 50px;
+      font-weight: bold;
+  }
+  nav ul{
+      float: right;
+      margin: right;
+  }
+  nav ul li {
+      display: inline-block;
+      line-height: 50px;
+      margin: 0 5px;
+  }
+  nav ul li {
+      color: #fff5f5;
+      font-size: 17px;
+      font-weight: bold;
+      padding: 0;
+      border-radius: 3px;
+
+  }
+  a.active,a:hover {
+      transition: all 0.6s;
+      border-radius: 20px;
+      padding: 10px;
+      background-color: var(--secondary-color-dark);
+  }
+/*FOOTER SECTION CSS*/
+
+/*-------------*/
+
+footer {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(68, 104, 31, 0.956);
+  border-top: 2px solid var(--text-color);
+}
+
+footer .footer_container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 30px 0;
+}
+
+footer .footer_container .footer_element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .footer_container .footer_element h4 {
+  color: white;
+  font-family: 'Bungee', sans-serif;
+  text-align: center;
+  cursor: default;
+}
+
+footer .footer_container .footer_element span, a {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.copyright {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/*-------------*/
+
+.image-container{
+  text-align: center;
+}
+  .image {
+width: 200px;
+height: 150px;
+  }
+  .image-container h3{
+      font-size: 40px;
+  }
+  .image-container p{
+      font-size: 20px;
+  }
+  /**/
+#comments-section {
+margin-top: 10px;
+}
+
+#comment-input {
+width: 100%;
+}
+
+#comments {
+margin-bottom: 5px;
+}
+
+.comment {
+margin-bottom: 5px;
+border: 1px solid grey;
+background-color: grey;
+}
+
+  </style>
+</head>
+<body>
+<div id = "NavBar">
+<nav>
+ <label class = "logo">Go</label>
+  <ul>
+  <li><a href="index.html" target="_self">Home</a></li>
+  <li><a href="feature.html" target="_self">Features</a></li>
+  <li><a href="blog.html" target="_self">Blog</a></li>
+    <li><a href="about.html" target="_self">About </a></li>
+  </ul>
+</nav>
+</div>
+
+
+  <div class="image-container">
+      <h3>ABOUT MYSELF</h3>
+      <img src="received_1773800469702931.jpeg" alt="Gradpic Image" class="image">
+      <p>goaustine1@gmail.com
+      </p>
+
+
+
+        <h3>Go BELIEVES</h3>
+       <p>Man is still the most extraordinary computer of all.</p>
+         <h3>Go THOUGHTS</h3>
+      <p>Computers are incredibly fast, accurate, and stupid. Human beings are incredibly slow,
+         inaccurate, and brilliant. 
+        Together they are powerful beyond imagination.</p>
+      <h3>Go MOTIVATES</h3>
+      <p>Opportunities are like sunrises. If you wait too long, you miss them.</p>
+          </div> 
+
+
+
+
+  <div id="comments-section">
+      <h2>Comments</h2>
+      <div id="comments"></div>
+      
+      <h3>Add a Comment</h3>
+      <form id="comment-form">
+        <textarea id="comment-input" rows="4" placeholder="Write your comment"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+
+
+      <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            // Get the comment form and comments section elements
+            const commentForm = document.getElementById("comment-form");
+            const commentsSection = document.getElementById("comments");
+          
+            // Add an event listener to the comment form on submit
+            commentForm.addEventListener("submit", function(event) {
+              event.preventDefault(); // Prevent the default form submission behavior
+          
+              // Get the comment input value
+              const commentInput = document.getElementById("comment-input");
+              const commentText = commentInput.value;
+          
+              if (commentText.trim() !== "") {
+                // Create a new comment element
+                const commentElement = document.createElement("div");
+                commentElement.classList.add("comment");
+                commentElement.textContent = commentText;
+          
+                // Append the new comment element to the comments section
+                commentsSection.appendChild(commentElement);
+          
+                // Clear the comment input
+                commentInput.value = "";
+              }
+            });
+          });
+          </script>
+          
+    </div>
+    <footer>
+      <div class="footer_container">
+          <div class="footer_element">
+
+
+            <!--footer-->
+              <h4>Get in touch</h4>
+              <span>goaustine1@gmail.com
+              </span>
+          </div>
+
+
+          <div class="footer_element">
+              <h4>Social</h4>
+              <span><a href="https://www.facebook.com/profile.php?id=100069258962966"><i class="facebook"></i> Facebook</a></span>
+              <span><a href="link sa imong social med"><i class="twitter"></i> Twitter</a></span>
+              <span><a href="link sa imong social med"><i class="instagram"></i> Instagram</a></span>
+          </div>
+          <div class="footer_element">
+
+
+              <h4>Contact:</h4>
+              <span>0918 564 6252</span>
+
+          </div>
+      </div>
+      <div class="footer_element">
+          <span class="copyright"><em>©2023 Llam Austine Go</em></span>
+      </div>
+</body>
+</html>

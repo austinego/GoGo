@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GO</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+		/* Add any CSS styles you want here */
+		*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        }
+        body{
+            font-family: Courier New;
+        }
+        nav{
+            background: rgba(68, 104, 31, 0.956);
+          
+        }
+		label.logo{
+            color: white;
+            font-size: 35px;
+            line-height: 50px;
+            padding-left: 50px;
+            font-weight: bold;
+		}
+		nav ul{
+            float: right;
+            margin: right;
+        }
+        nav ul li {
+            display: inline-block;
+            line-height: 50px;
+            margin: 0 5px;
+        }
+        nav ul li {
+            color: #fff5f5;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 0;
+            border-radius: 3px;
+
+        }
+        a.active,a:hover {
+            transition: all 0.6s;
+            border-radius: 20px;
+            color: black;
+            padding: 10px;
+            background-color: var(--secondary-color-dark);
+        }
+/*Banner image style*/
+
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgba(68, 104, 31, 0.956);
+}
+
+.banner-text h1 {
+  font-size: 65px; /* Adjust the font size as needed */
+  margin-bottom: 10px;  
+}
+.banner-text p {
+  font-size: 28px; /* Adjust the font size as needed */
+  margin-bottom: 10px;
+  color: black;
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100px;
+  width: 250px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: .7em;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+
+		</style>
+<body>
+</div>
+	<div id = "NavBar">
+  <nav>
+	 <label class = "logo">Go</label>
+	  <ul class="text white">
+		<li><a href="index.html" target="_self">Home</a></li>
+		<li><a href="feature.html" target="_self">Features</a></li>
+		<li><a href="blog.html" target="_self">Blog</a></li>
+		  <li><a href="about.html" target="_self">About </a></li>
+	  </ul>
+  </nav>
+	</div>
+	
+    <body>
+      <div class="w3-bar-center w3-green">
+        <button class="w3-bar-item w3-button" onclick="openCity('Ooprog')">WEBTEC ACTIVITY</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('Copro')">COPRO ACTIVITY</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('Webtec')">OOPROG ACTIVITY</button>
+      </div>x`
+      
+      <div id="Ooprog" class="w3-container city">
+        <h2>WEBTEC ACTIVITIES</h2>
+        <p><h3>PRELIM ACTIVITY</p></h3>
+        <img src="prelim webtec.jpg" class="image">
+        <br><h1>MIDTERM ACTIVITY</h1>
+        <img src="midterm webtec.jpg" class="image">
+        
+      </div>
+      
+      <div id="Copro" class="w3-container city" >
+        <h2>COPRO ACTIVITIES</h2>
+        <p><h3>PRELIM ACTIVITY</h3>
+          </p> 
+        <img src="copro act 1.png" class="image">
+        <br><h1>MIDTERM ACTIVITY</h1>></p>
+        <img src="copro act 2.png" class="image">
+        
+      </div>
+      
+      <div id="Webtec" class="w3-container city"  >
+        <h1>OOPROG ACTIVITIES</h1>
+        <p><h4>PRELIM ACTIVITY</p><br></h4>
+        <img src="oop act 1.png" class="image">
+        <br><h1>MIDTERM ACYTIVITY</p></h1>
+        <img src="oop act 2.png" class="image">
+
+      </div>
+      
+      <script>
+      function openCity(cityName) {
+        var i;
+        var x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        document.getElementById(cityName).style.display = "block";  
+      }
+      </script>
+<section>
+      <div>
+
+      </div>
+      </section>
+      
+	  
+  
+</body>
+</html>
